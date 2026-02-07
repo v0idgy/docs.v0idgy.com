@@ -1,0 +1,5 @@
+<li class="sidebar-page {% if current_page and page_obj.id == current_page.id %}active{% endif %}">
+    <a href="{{ page_obj.get_absolute_url() }}">
+        {{ page_obj.title }}
+    </a>
+</li>

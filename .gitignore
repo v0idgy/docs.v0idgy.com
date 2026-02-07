@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Django / Python
+db.sqlite3
+*.sqlite3
+*.log
+
+# Static collections
+staticfiles/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage / test
+.coverage
+coverage.xml
+htmlcov/
+
+# Pip caches
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+dist/
+build/

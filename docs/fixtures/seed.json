@@ -1,0 +1,183 @@
+[
+  {
+    "model": "docs.section",
+    "pk": 1,
+    "fields": {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "order": 1,
+      "icon": "sparkles",
+      "description": "Read actively and build the habit of working through docs."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 2,
+    "fields": {
+      "title": "Chai our HTML",
+      "slug": "chai-our-html",
+      "order": 2,
+      "icon": "html",
+      "description": "HTML intros, elements, and tags."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 3,
+    "fields": {
+      "title": "Chai our Git",
+      "slug": "chai-our-git",
+      "order": 3,
+      "icon": "git",
+      "description": "Git foundations and workflows."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 4,
+    "fields": {
+      "title": "Chai our C++",
+      "slug": "chai-our-cpp",
+      "order": 4,
+      "icon": "code",
+      "description": "C++ fundamentals."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 5,
+    "fields": {
+      "title": "Chai our Django",
+      "slug": "chai-our-django",
+      "order": 5,
+      "icon": "django",
+      "description": "Django primers and templates."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 6,
+    "fields": {
+      "title": "Chai our SQL",
+      "slug": "chai-our-sql",
+      "order": 6,
+      "icon": "database",
+      "description": "SQL and data design basics."
+    }
+  },
+  {
+    "model": "docs.section",
+    "pk": 7,
+    "fields": {
+      "title": "Chai our DevOps",
+      "slug": "chai-our-devops",
+      "order": 7,
+      "icon": "devops",
+      "description": "Servers and deployment."
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 1,
+    "fields": {
+      "section": 1,
+      "title": "Welcome",
+      "slug": "welcome",
+      "order": 1,
+      "summary": "How to get the most from these docs.",
+      "content_html": "<h1>Getting Started</h1><p>Reading the docs is a great way to learn. Take it slow, highlight key points, and try the exercises.</p><h2 id=\"overview\">Overview</h2><p>We designed this site to make reading pleasant. Use the sidebar to jump around.</p><h2 id=\"maximize\">Maximize Your Learning</h2><ol><li><strong>Read Actively:</strong> Pause, annotate, and bookmark.</li><li><strong>Practice What You Learn:</strong> Build tiny demos for each idea.</li><li><strong>Utilize Additional Resources:</strong> Cross-reference with blogs and videos.</li><li><strong>Stay Organized:</strong> Bookmark important sections.</li><li><strong>Engage with the Community:</strong> Join discussions and ask questions.</li></ol>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 2,
+    "fields": {
+      "section": 2,
+      "title": "HTML Intro",
+      "slug": "html-intro",
+      "order": 1,
+      "summary": "HTML basics with elements and tags.",
+      "content_html": "<h1>HTML Intro</h1><p>HTML structures your document using elements and attributes.</p><h2 id=\"elements\">Elements</h2><p>Each element has opening and closing tags.</p><h2 id=\"attributes\">Attributes</h2><p>Attributes modify elements and provide extra metadata.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 3,
+    "fields": {
+      "section": 2,
+      "title": "Common HTML Tags",
+      "slug": "common-tags",
+      "order": 2,
+      "summary": "Frequently used tags with examples.",
+      "content_html": "<h1>Common HTML Tags</h1><p>Paragraphs, headings, lists, images, and links are the bread and butter.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 4,
+    "fields": {
+      "section": 3,
+      "title": "Git and GitHub",
+      "slug": "git-and-github",
+      "order": 1,
+      "summary": "Why Git matters and how to start.",
+      "content_html": "<h1>Git and GitHub</h1><p>Git tracks changes; GitHub hosts your repos.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 5,
+    "fields": {
+      "section": 4,
+      "title": "First Program in C++",
+      "slug": "first-program-cpp",
+      "order": 1,
+      "summary": "Write and compile your first C++ app.",
+      "content_html": "<h1>Hello C++</h1><p>Set up a compiler and print your first line.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 6,
+    "fields": {
+      "section": 5,
+      "title": "Django Intro",
+      "slug": "django-intro",
+      "order": 1,
+      "summary": "Understand the Django philosophy.",
+      "content_html": "<h1>Django Intro</h1><p>Django is a batteries-included web framework.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 7,
+    "fields": {
+      "section": 6,
+      "title": "SQL Basics",
+      "slug": "sql-basics",
+      "order": 1,
+      "summary": "Select, insert, update, delete.",
+      "content_html": "<h1>SQL Basics</h1><p>Learn SELECT, INSERT, UPDATE, DELETE.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "docs.page",
+    "pk": 8,
+    "fields": {
+      "section": 7,
+      "title": "Server Startup",
+      "slug": "server-startup",
+      "order": 1,
+      "summary": "Boot a simple server and deploy.",
+      "content_html": "<h1>Server Startup</h1><p>Understand reverse proxies and TLS basics.</p>",
+      "updated_at": "2025-04-22T12:00:00Z"
+    }
+  }
+]

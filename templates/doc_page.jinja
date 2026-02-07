@@ -1,0 +1,60 @@
+{% extends "base.jinja" %}
+
+{% block title %}{{ page.title }} · {{ section.title }}{% endblock %}
+
+{% block nav_links %}
+    <nav class="nav-links">
+        <a href="{{ url('landing') }}">Home</a>
+        <a href="{{ url('docs_root') }}">Docs</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<div class="doc-layout">
+    <aside class="sidebar">
+        {% for sec in sections %}
+            <div class="sidebar-section">
+                <div class="sidebar-heading">{{ sec.title }}</div>
+                <ul>
+                    {% for page_item in sec.pages.all() %}
+                        {% with page_obj=page_item, current_page=page %}
+                            {% include "partials/sidebar_item.jinja" %}
+                        {% endwith %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </aside>
+
+    <article class="doc-content">
+        <div class="doc-meta">
+            <p class="muted">Compiled by Team Docs · Updated {{ page.updated_at.date() }}</p>
+        </div>
+        <h1>{{ page.title }}</h1>
+        <div class="doc-body" id="doc-body">
+            {{ page.content_html | safe }}
+        </div>
+        <div class="doc-pager">
+            <div>
+                {% if prev_page %}
+                    <a class="pager-link" href="{{ prev_page.get_absolute_url() }}">← {{ prev_page.title }}</a>
+                {% endif %}
+            </div>
+            <div>
+                {% if next_page %}
+                    <a class="pager-link" href="{{ next_page.get_absolute_url() }}">{{ next_page.title }} →</a>
+                {% else %}
+                    <span class="muted">End</span>
+                {% endif %}
+            </div>
+        </div>
+    </article>
+
+    <aside class="on-page">
+        <div class="toc-card">
+            <div class="toc-title">On this page</div>
+            <ol id="toc-list"></ol>
+        </div>
+    </aside>
+</div>
+{% endblock %}

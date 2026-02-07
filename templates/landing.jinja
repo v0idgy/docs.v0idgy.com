@@ -1,0 +1,48 @@
+{% extends "base.jinja" %}
+
+{% block title %}Docs You'll Actually Read{% endblock %}
+
+{% block nav_links %}
+    <nav class="nav-links">
+        <a href="{{ url('docs_root') }}">Docs</a>
+        <a href="https://youtu.be" target="_blank" rel="noreferrer">Tutorials</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <p class="eyebrow">ChaiDocs-inspired</p>
+        <h1>Docs You'll Actually Read</h1>
+        <p class="lede">Next-gen docs that build reading habits into your workflow.</p>
+        <div class="cta-row">
+            <a class="button primary" href="{{ url('docs_root') }}">Start Learning 🚀</a>
+            <a class="button ghost" href="https://youtu.be" target="_blank" rel="noreferrer">Watch Tutorials ↗</a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="glass-card">
+            <div class="illustration">/&lt; &gt;</div>
+        </div>
+    </div>
+</section>
+
+<section class="support">
+    <div class="support-card">
+        <p class="small-label">Have a question or want to get involved?</p>
+        <a class="button outline" href="https://discord.com" target="_blank" rel="noreferrer">Join our Discord</a>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about-brand">
+        <img src="{{ static('img/logo.svg') }}" alt="Docs logo" class="about-logo">
+        <div>
+            <p class="muted">Brought to you by</p>
+            <h3>ChaiCode (inspired)</h3>
+            <p class="muted">An initiative focused on helping people learn programming through approachable docs.</p>
+            <a class="link" href="https://chaicode.com" target="_blank" rel="noreferrer">Learn about ChaiCode</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
