@@ -88,6 +88,34 @@ html[data-theme="light"] .top-nav.nav-scrolled {
   gap: 16px;
 }
 
+.social-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  overflow: hidden;
+}
+
+.icon-link img {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-link:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  border-color: transparent;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
