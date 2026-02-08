@@ -231,9 +231,13 @@ html[data-theme="light"] .icon-moon {
 }
 
 .page-shell {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 24px 16px 40px;
+  padding: 24px 14px 40px;
+}
+
+body.docs-page .page-shell {
+  max-width: 1680px;
 }
 
 .hero {
@@ -287,7 +291,7 @@ html[data-theme="light"] .icon-moon {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8rem;
-  margin: 0 0 8px;
+  margin: 0 10 8px;
 }
 
 .cta-row {
@@ -304,7 +308,7 @@ html[data-theme="light"] .icon-moon {
   .hero-text,
   .hero-visual {
     flex: 1 1 auto;
-    width: 100%;
+    width: 80%;
   }
 }
 

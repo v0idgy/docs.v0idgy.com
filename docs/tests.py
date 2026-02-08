@@ -19,7 +19,7 @@ class DocsTests(TestCase):
         )
 
     def test_doc_page_renders(self):
-        resp = self.client.get(reverse("doc_page", args=["chai-our-html", "html-intro"]))
+        resp = self.client.get(reverse("doc_page", args=["html", "html-intro"]))
         self.assertEqual(resp.status_code, 200)
         self.assertContains(resp, 'data-nav="glass"')
         self.assertContains(resp, "On this page")

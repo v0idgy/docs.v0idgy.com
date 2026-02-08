@@ -14,8 +14,8 @@
     "model": "docs.section",
     "pk": 2,
     "fields": {
-      "title": "Chai our HTML",
-      "slug": "chai-our-html",
+      "title": "HTML",
+      "slug": "html",
       "order": 2,
       "icon": "html",
       "description": "HTML intros, elements, and tags."
@@ -25,8 +25,8 @@
     "model": "docs.section",
     "pk": 3,
     "fields": {
-      "title": "Chai our Git",
-      "slug": "chai-our-git",
+      "title": "Git",
+      "slug": "git",
       "order": 3,
       "icon": "git",
       "description": "Git foundations and workflows."
@@ -36,8 +36,8 @@
     "model": "docs.section",
     "pk": 4,
     "fields": {
-      "title": "Chai our C++",
-      "slug": "chai-our-cpp",
+      "title": "C++",
+      "slug": "cpp",
       "order": 4,
       "icon": "code",
       "description": "C++ fundamentals."
@@ -47,8 +47,8 @@
     "model": "docs.section",
     "pk": 5,
     "fields": {
-      "title": "Chai our Django",
-      "slug": "chai-our-django",
+      "title": "Django",
+      "slug": "django",
       "order": 5,
       "icon": "django",
       "description": "Django primers and templates."
@@ -58,8 +58,8 @@
     "model": "docs.section",
     "pk": 6,
     "fields": {
-      "title": "Chai our SQL",
-      "slug": "chai-our-sql",
+      "title": "SQL",
+      "slug": "sql",
       "order": 6,
       "icon": "database",
       "description": "SQL and data design basics."
@@ -69,8 +69,8 @@
     "model": "docs.section",
     "pk": 7,
     "fields": {
-      "title": "Chai our DevOps",
-      "slug": "chai-our-devops",
+      "title": "DevOps",
+      "slug": "devops",
       "order": 7,
       "icon": "devops",
       "description": "Servers and deployment."
