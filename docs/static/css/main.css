@@ -233,27 +233,53 @@ html[data-theme="light"] .icon-moon {
 .page-shell {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 32px 20px 80px;
+  padding: 24px 16px 40px;
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
   align-items: center;
   gap: 32px;
   padding: 40px 0 24px;
 }
 
+.hero-text {
+  flex: 0 0 75%;
+}
+
+.hero-visual {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-laptop {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+  animation: floaty 4s ease-in-out infinite alternate;
+}
+
+@keyframes floaty {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
 .hero-text h1 {
-  font-size: clamp(2.4rem, 4vw, 3.8rem);
-  margin: 0 0 12px;
+  font-size: clamp(5.4rem, 5vw, 4.8rem);
+  margin: 0 0 10px;
   font-family: var(--font-display);
 }
 
 .hero-text .lede {
   color: var(--muted);
   margin-bottom: 20px;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
 }
 
 .eyebrow {
@@ -266,8 +292,20 @@ html[data-theme="light"] .icon-moon {
 
 .cta-row {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+@media (max-width: 820px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text,
+  .hero-visual {
+    flex: 1 1 auto;
+    width: 100%;
+  }
 }
 
 .button {
@@ -302,7 +340,7 @@ html[data-theme="light"] .icon-moon {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 40px;
+  padding: 50px;
   box-shadow: var(--shadow);
   text-align: center;
 }
@@ -504,6 +542,11 @@ html[data-theme="light"] .icon-moon {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
+}
+
+#toc-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 .site-footer {
