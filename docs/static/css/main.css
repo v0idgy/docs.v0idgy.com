@@ -112,15 +112,21 @@ html[data-theme="light"] .top-nav.nav-scrolled {
   font-weight: 600;
 }
 
-.nav-links a {
+.nav-link {
   padding: 8px 10px;
   border-radius: 10px;
   color: var(--muted);
 }
 
-.nav-links a:hover {
+.nav-link:hover {
   color: var(--text);
   background: var(--border);
+}
+
+.nav-link.active {
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  box-shadow: 0 6px 14px rgba(247, 156, 45, 0.25);
 }
 
 .search-shell {
@@ -197,7 +203,7 @@ html[data-theme="light"] .icon-moon {
 }
 
 .page-shell {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 32px 20px 80px;
 }
@@ -333,14 +339,16 @@ html[data-theme="light"] .icon-moon {
 
 .doc-layout {
   display: grid;
-  grid-template-columns: 250px 1fr 220px;
+  grid-template-columns: 280px minmax(0, 1.5fr) 240px;
   gap: 28px;
   margin-top: 10px;
+  min-height: calc(100vh - 140px);
+  align-items: flex-start;
 }
 
 @media (max-width: 1024px) {
   .doc-layout {
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 240px 1fr;
   }
   .on-page {
     display: none;
@@ -363,7 +371,7 @@ html[data-theme="light"] .icon-moon {
   padding: 16px;
   position: sticky;
   top: 88px;
-  max-height: calc(100vh - 120px);
+  height: calc(100vh - 140px);
   overflow-y: auto;
 }
 
@@ -404,8 +412,16 @@ html[data-theme="light"] .icon-moon {
   background: var(--bg-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px 24px;
+  padding: 16px 16px 0;
   box-shadow: var(--shadow);
+  height: calc(100vh - 140px);
+  overflow: hidden;
+}
+
+.doc-content-scroll {
+  height: 100%;
+  overflow-y: auto;
+  padding: 18px 20px 72px;
 }
 
 .doc-content h1,
@@ -440,6 +456,8 @@ html[data-theme="light"] .icon-moon {
 .on-page {
   position: sticky;
   top: 88px;
+  height: calc(100vh - 140px);
+  overflow-y: auto;
 }
 
 .toc-card {

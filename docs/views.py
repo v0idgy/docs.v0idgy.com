@@ -70,6 +70,7 @@ def landing_view(request):
         {
             "sections": sections,
             "search_data_json": json.dumps(search_data),
+            "active_nav": "home",
         },
     )
 
@@ -96,5 +97,6 @@ def doc_view(request, section_slug: str | None = None, page_slug: str | None = N
             "search_data_json": json.dumps(search_data),
             "prev_page": prev_page,
             "next_page": next_page,
+            "active_nav": "docs",
         },
     )
